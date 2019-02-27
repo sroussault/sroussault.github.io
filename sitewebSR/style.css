@@ -4,7 +4,7 @@ html{
 
 body{
   width:100%;
-  margin: auto;
+  margin:0;
 }
 
 #content{
@@ -79,7 +79,7 @@ nav{
 
 }
 
-#fonde{
+#fondc{
   width: 100%;
   height: 600px;
   background-color: #00536F;
@@ -105,6 +105,10 @@ nav{
   padding-top: 30px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.CV{
+  display: none;
 }
 
 h2{
@@ -141,6 +145,13 @@ text-align: center;
   left: 50%;
 }
 
+#competence{
+  display: none;
+}
+
+#experience{
+  display: none;
+}
 
 #Portfolio{
   width: 100%;
@@ -186,11 +197,26 @@ transition: all 0.5s ease-in 0s;
   margin-right: auto;
 }
 
+.bulb{
+  background-image: url(images/light.png);
+  width: 128px;
+  height: 128px;
+
+}
+
+#qr{
+  display: none;
+}
+
 .logo{
   display: flex;
   justify-content: space-around;
   padding-top: 90px;
   left: 50%;
+}
+
+.lien1{
+  display: none;
 }
 
 #b1:hover,
@@ -248,4 +274,268 @@ footer{
   position: fixed;
   bottom: 0px;
   left: 50%;
+}
+
+.headphone{
+  display: none;
+}
+
+@media screen and (max-width:760px) {
+nav,footer,body,#content,.headphone
+,#a-propos,.bulb,#portfolio,#fonda,#contact,p,#fondb{
+width: 320px;}
+#logo{
+  display: none;
+}
+header{
+  display: none;
+}
+.headphone{
+display: block;
+top: 0;
+margin: auto;
+height: 150px;
+background-color: #00536F;
+}
+h1{
+  font-family: 'Orbitron', sans-serif;
+  font-size:25px;
+  position: relative;
+  top: 50px;
+  color: white;
+  margin-left: 30px;
+  text-align: left;
+}
+#content{
+  height: 2100px;
+  top:0px;
+  position: relative;
+}
+#a-propos{
+  background-color: #ebebeb;
+}
+h2{
+  margin-top: -30px;
+  font-size: 30px;
+  text-shadow: none;
+  background-color: #3c3c3c;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: white;
+}
+h3{
+  margin-top: -10px;
+  color: black;
+  text-shadow: none;
+  font-size: 20px;
+}
+.description{
+  color: black;
+  font-size: 15px;
+  text-align: justify;
+  margin:0;
+  width: 300px;
+  padding: 10px;
+}
+.inspi{
+  margin-top:100px;
+}
+
+.bulb{
+  background-repeat: no-repeat;
+  display: block;
+  width: 280px;
+  height: 82px;
+  position: relative;
+  float: left;
+}
+#b1{
+  background-repeat: no-repeat;
+  display: block;
+  left: 20px;
+  width: 280px;
+  height: 82px;
+  position: absolute;
+}
+
+#b2{
+  background-repeat: no-repeat;
+  display: block;
+  width: 280px;
+  height: 82px;
+  top:530px;
+  left: 20px;
+  position: absolute;
+}
+
+#b3{
+  background-repeat: no-repeat;
+  display: block;
+  width: 280px;
+  height: 82px;
+  top:620px;
+  left: 20px;
+  position: absolute;
+}
+
+#b1 .bulb{background-image: url(images/bounce.png);}
+#b2 .bulb{background-image: url(images/pinterest.png);}
+#b3 .bulb{background-image: url(images/pinterestb.png);}
+
+#bounce{
+  display: none;
+}
+
+#pint1{
+  display: none;
+}
+
+#pint2{
+  display: none;
+}
+
+h4{
+  margin-top: -30px;
+  font-size: 30px;
+  text-shadow: none;
+  background-color: #3c3c3c;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: white;
+}
+#Portfolio{
+  top: 790px;
+}
+.vignettes:hover{
+  transform: scale(1);
+}
+#contact{
+  top: 1900px;
+}
+#fondc{
+  display: none;
+}
+#fondb{
+  top: 2050px;
+}
+#fonda{
+  height: 1200px;
+}
+#parag{
+  color: black;
+  font-size: 15px;
+  text-align: center;
+  margin:0;
+  width: 300px;
+  padding: 10px;
+}
+}
+
+@media print{
+nav,#fondb,#logo,header,h3,.description,.idée,#Portfolio,#fondb,#fondc,.logo{
+  display: none;
+}
+.headphone{
+display: block;
+top: 0;
+margin: auto;
+height: 300px;
+background-color: #4c869a;
+}
+h1{
+  font-family: 'Orbitron', sans-serif;
+  font-size:80px;
+  position: relative;
+  top: 50px;
+  color: white;
+  margin-left: 30px;
+  text-align: left;
+}
+#fonda{
+  margin-top: 300px;
+  position: absolute;
+  width: 30%;
+  height:700px;
+  background-color: #7fa9b7;
+}
+#content{
+  top: -40px;
+  width: 70%;
+  left: 10%;
+  height: 600px;
+}
+h2,#exp,#ctc{
+  font-family: 'Orbitron', sans-serif;
+  font-size:30px;
+  position: relative;
+  color: black;
+  text-shadow: none;
+  text-align: left;
+  left: 60px;
+}
+.CV,#parag{
+  display: block;
+  color: black;
+  font-size: 20px;
+  text-align: justify;
+  margin-left: 90px;
+  width: 80%;
+}
+#competence{
+  display: block;
+  top:20px;
+  left: -40%;
+  position: absolute;
+  width: 30%;
+}
+#comp{
+  font-family: 'Orbitron', sans-serif;
+  font-size:25px;
+  position: relative;
+  color: white;
+  text-shadow: none;
+  text-align: left;
+  left: 40px;
+}
+.listec{
+  font-family: 'Changa', sans-serif;
+  font-size: 20px;
+  color: black;
+  margin-left: 60px;
+  list-style: none;
+}
+#experience{
+  display: block;
+  top:250px;
+  position: absolute;
+}
+.listed{
+  font-family: 'Changa', sans-serif;
+  font-size: 20px;
+  color: black;
+  margin-left: 60px;
+}
+.more{
+  list-style: none;
+  font-size: 15px;
+  font-style: italic;
+}
+#contact{
+  display: block;
+  top:400px;
+  position: absolute;
+}
+#qr{
+  display: block;
+  z-index: 90;
+  margin-left: 50%;
+  width: 60px;
+  height: 78px;
+}
+#mail{
+  font-family: 'Changa', sans-serif;
+  font-size: 20px;
+  color: black;
+  margin-left: 40%;
+}
 }

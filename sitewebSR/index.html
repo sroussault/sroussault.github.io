@@ -4,15 +4,13 @@
 
 <head>
 
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title="Mon Portfolio"</title>
-
-<link rel="stylesheet" href="style.css" type="text/css"/>
-<link rel="stylesheet" href="css/lightbox.min.css" type="text/css"/>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title="Mon Portfolio"</title> <link rel="stylesheet" href="style.css" type="text/css" />
+  <link rel="stylesheet" href="css/lightbox.min.css" type="text/css" />
 
 
-<link href="https://fonts.googleapis.com/css?family=Bree+Serif|Pacifico|Playfair+Display:700,900|Orbitron:900,500|Open+Sans|Changa" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Pacifico|Playfair+Display:700,900|Orbitron:900,500|Open+Sans|Changa" rel="stylesheet">
 
 </head>
 
@@ -21,42 +19,53 @@
   <main id="fonda"></main>
   <main id="fondb"></main>
   <main id="fondc"></main>
-  <main id="fondd"></main>
-  <main id="fonde"></main>
 
+
+  <div class="headphone">
+    <h1>Sonia <br />Roussault </h1>
+  </div>
   <header>
     <h1>Sonia Roussault </h1>
     <div id="opacité"></div>
-    <nav id="home"> <a href="#apropos">A Propos</a>  -  <a href="#mportf">Portfolio</a>  -  <a href="#ctc">Contact</a></nav>
+    <nav id="home"> <a href="#apropos">A Propos</a> - <a href="#mportf">Portfolio</a> - <a href="#ctc">Contact</a></nav>
   </header>
 
   <div id="content">
+
     <section id="a-propos">
       <h2>A Propos</h2>
       <div>
         <h3>Bienvenue dans mon univers !</h3>
-          <p> Actuellement étudiante en communication Multimédia, vous découvrirez sur ce site
-            les travaux que j'ai pu effectuer jusqu'à présent.
-            Pour réaliser ce template, je me suis inspiré des denières tendances du web-design,
-            notamment le site de bounce design ou encore d'autres sites sur Pinterest.
-          </p>
-        <h3>Insipration:</h3>
+        <p class="description"> Actuellement étudiante en communication Multimédia, vous découvrirez sur ce site
+          les travaux que j'ai pu effectuer jusqu'à présent.
+          Pour réaliser ce template, je me suis inspiré des denières tendances du web-design,
+          notamment le site de bounce design ou encore d'autres sites sur Pinterest.
+        </p>
+        <p class="CV"> Actuellement étudiante en communication Multimédia, vous pourrez grâce à ce CV avoir un aperçu de mes connaissance et capacités
+          en matière de design et autres.</p>
+        <h3 class="inspi">Insipration:</h3>
         <div class="idée">
-          <a href="http://www.bouncedesign.com/" id="b1" target="newpage1"><img src="images/light.png" alt="ampoule"/>
-            <div id="bounce"><p></br></br>Le site de bounce design m'a inspiré pour son design simple et complet. Selon mon
-              analyse, les sites d'une page sont actuellement assez tendance, c'est pourquoi j'ai voulu reproduire
-              le même schéma.</p>
+          <a href="http://www.bouncedesign.com/" id="b1" target="newpage1">
+            <div class="bulb"></div>
+            <div id="bounce">
+              <p></br></br>Le site de bounce design m'a inspiré pour son design simple et complet. Selon mon
+                analyse, les sites d'une page sont actuellement assez tendance, c'est pourquoi j'ai voulu reproduire
+                le même schéma.</p>
             </div>
           </a>
-          <a href="https://pin.it/tucnb4rn24ig6n" id="b2" target="newpage2"><img src="images/light.png"alt="ampoule"/>
-            <div id="pint1"><p></br></br>Cet exemple de design tiré du site Pinterest m'a inspiré par rapport à ses tons vivants,
-              mais aussi par sa simplicité de navigaton et de disposition des éléments.</p>
+          <a href="https://pin.it/tucnb4rn24ig6n" id="b2" target="newpage2">
+            <div class="bulb"></div>
+            <div id="pint1">
+              <p></br></br>Cet exemple de design tiré du site Pinterest m'a inspiré par rapport à ses tons vivants,
+                mais aussi par sa simplicité de navigaton et de disposition des éléments.</p>
             </div>
           </a>
-          <a href="https://pin.it/xvqqttoyg4zlsf" id="b3" target="newpage3"><img src="images/light.png"alt="ampoule"/>
-            <div id="pint2"><p></br></br>Ce troisième exemple est toujours dans le thème voulu avec des couleurs
-              plus ou moins vives. Celui est aussi un exemple d'un site fonctionnel d'une page.
-              Ce design est égalament simple mais très fonctionnel. On voit très clairement les différentes parties.</p>
+          <a href="https://pin.it/xvqqttoyg4zlsf" id="b3" target="newpage3">
+            <div class="bulb"></div>
+            <div id="pint2">
+              <p></br></br>Ce troisième exemple est toujours dans le thème voulu avec des couleurs
+                plus ou moins vives. Celui est aussi un exemple d'un site fonctionnel d'une page.
+                Ce design est égalament simple mais très fonctionnel. On voit très clairement les différentes parties.</p>
             </div>
           </a>
         </div>
@@ -67,97 +76,124 @@
     <section id="Portfolio">
       <h4 id="mportf">Mon Portfolio</h4>
 
-        <div class="gallery">
-          <a href="images/illustration/draw.png" data-lightbox="set" data-title="Lorem">
-            <img class="vignettes"src="images/vignettes/draw.jpeg" alt="illustration" width="100" height="100">
-          </a>
-        </div>
-        <div class="gallery">
-          <a target="blank" href="images/illustration/draw1.jpg" data-lightbox="set">
-            <img class="vignettes"src="images/vignettes/draw1.jpeg" alt="illustration" width="100" height="100">
-          </a>
-        </div>
-        <div class="gallery">
-          <a target="blank" href="images/illustration/draw2.jpg" data-lightbox="set">
-            <img class="vignettes"src="images/vignettes/draw2.jpeg" alt="illustration" width="100" height="100">
-          </a>
-        </div>
-        <div class="gallery">
-          <a target="blank" href="images/illustration/draw3.jpg" data-lightbox="set">
-            <img class="vignettes"src="images/vignettes/draw3.jpeg" alt="illustration" width="100" height="100">
-          </a>
-        </div>
-        <div class="gallery">
-            <a target="blank" href="images/illustration/ocean.png" data-lightbox="set">
-              <img class="vignettes"src="images/vignettes/ocean.jpeg" alt="illustration" width="100" height="100">
-            </a>
-          </div>
-          <div class="gallery">
-            <a target="blank" href="images/illustration/draw4.jpg" data-lightbox="set">
-              <img class="vignettes"src="images/vignettes/draw4.jpeg" alt="illustration" width="100" height="100">
-            </a>
-          </div>
-          <div class="gallery">
-            <a target="blank" href="images/illustration/draw5.jpg" data-lightbox="set">
-              <img class="vignettes"src="images/vignettes/draw5.jpeg" alt="illustration" width="100" height="100">
-            </a>
-          </div>
-          <div class="gallery">
-            <a target="blank" href="images/illustration/draw6.jpg" data-lightbox="set">
-              <img class="vignettes"src="images/vignettes/draw6.jpeg" alt="illustration" width="100" height="100">
-            </a>
-          </div>
-          <div class="gallery">
-            <a target="blank" href="images/illustration/draw7.jpg" data-lightbox="set">
-              <img class="vignettes"src="images/vignettes/draw7.jpeg" alt="illustration" width="100" height="100">
-            </a>
-          </div>
-          <div class="gallery">
-            <a target="blank" href="images/illustration/draw8.jpg" data-lightbox="set">
-              <img class="vignettes"src="images/vignettes/draw8.jpeg" alt="illustration" width="100" height="100">
-            </a>
-          </div>
-          <div class="gallery">
-            <a target="blank" href="images/illustration/draw9.jpg" data-lightbox="set">
-              <img class="vignettes"src="images/vignettes/draw9.jpeg" alt="illustration" width="100" height="100">
-            </a>
-          </div>
-          <div class="gallery">
-            <a target="blank" href="images/illustration/3D.png" data-lightbox="set">
-              <img class="vignettes"src="images/vignettes/3D.jpeg" alt="illustration" width="100" height="100">
-            </a>
-          </div>
-          <div class="gallery">
-            <a target="blank" href="images/illustration/cameleon.jpg">
-              <img class="vignettes"src="images/vignettes/cameleon.jpeg" alt="illustration" width="100" height="100">
-            </a>
-          </div>
-          <div class="gallery">
-            <a target="blank" href="images/illustration/chat.png">
-              <img class="vignettes"src="images/vignettes/chat.jpeg" alt="illustration" width="100" height="100">
-            </a>
-          </div>
+      <div class="gallery">
+        <a href="images/illustration/draw.png" data-lightbox="set" data-title="Lorem">
+          <img class="vignettes" src="images/vignettes/draw.jpeg" alt="illustration" width="100" height="100">
+        </a>
+      </div>
+      <div class="gallery">
+        <a target="blank" href="images/illustration/draw1.jpg" data-lightbox="set">
+          <img class="vignettes" src="images/vignettes/draw1.jpeg" alt="illustration" width="100" height="100">
+        </a>
+      </div>
+      <div class="gallery">
+        <a target="blank" href="images/illustration/draw2.jpg" data-lightbox="set">
+          <img class="vignettes" src="images/vignettes/draw2.jpeg" alt="illustration" width="100" height="100">
+        </a>
+      </div>
+      <div class="gallery">
+        <a target="blank" href="images/illustration/draw3.jpg" data-lightbox="set">
+          <img class="vignettes" src="images/vignettes/draw3.jpeg" alt="illustration" width="100" height="100">
+        </a>
+      </div>
+      <div class="gallery">
+        <a target="blank" href="images/illustration/ocean.png" data-lightbox="set">
+          <img class="vignettes" src="images/vignettes/ocean.jpeg" alt="illustration" width="100" height="100">
+        </a>
+      </div>
+      <div class="gallery">
+        <a target="blank" href="images/illustration/draw4.jpg" data-lightbox="set">
+          <img class="vignettes" src="images/vignettes/draw4.jpeg" alt="illustration" width="100" height="100">
+        </a>
+      </div>
+      <div class="gallery">
+        <a target="blank" href="images/illustration/draw5.jpg" data-lightbox="set">
+          <img class="vignettes" src="images/vignettes/draw5.jpeg" alt="illustration" width="100" height="100">
+        </a>
+      </div>
+      <div class="gallery">
+        <a target="blank" href="images/illustration/draw6.jpg" data-lightbox="set">
+          <img class="vignettes" src="images/vignettes/draw6.jpeg" alt="illustration" width="100" height="100">
+        </a>
+      </div>
+      <div class="gallery">
+        <a target="blank" href="images/illustration/draw7.jpg" data-lightbox="set">
+          <img class="vignettes" src="images/vignettes/draw7.jpeg" alt="illustration" width="100" height="100">
+        </a>
+      </div>
+      <div class="gallery">
+        <a target="blank" href="images/illustration/draw8.jpg" data-lightbox="set">
+          <img class="vignettes" src="images/vignettes/draw8.jpeg" alt="illustration" width="100" height="100">
+        </a>
+      </div>
+      <div class="gallery">
+        <a target="blank" href="images/illustration/draw9.jpg" data-lightbox="set">
+          <img class="vignettes" src="images/vignettes/draw9.jpeg" alt="illustration" width="100" height="100">
+        </a>
+      </div>
+      <div class="gallery">
+        <a target="blank" href="images/illustration/3D.png" data-lightbox="set">
+          <img class="vignettes" src="images/vignettes/3D.jpeg" alt="illustration" width="100" height="100">
+        </a>
+      </div>
+      <div class="gallery">
+        <a target="blank" href="images/illustration/cameleon.jpg">
+          <img class="vignettes" src="images/vignettes/cameleon.jpeg" alt="illustration" width="100" height="100">
+        </a>
+      </div>
+      <div class="gallery">
+        <a target="blank" href="images/illustration/chat.png">
+          <img class="vignettes" src="images/vignettes/chat.jpeg" alt="illustration" width="100" height="100">
+        </a>
+      </div>
+    </section>
 
+    <section id="competence">
+      <h2 id="comp">Compétences</h2>
+        <ul class="listec">
+          <li>Photoshop</li>
+          <li></li>
+          <li>illustrator</li>
+          <li></li>
+          <li>Indesign</li>
+          <li></li>
+          <li>HTML</li>
+          <li></li>
+          <li>CSS</li>
+          <li></li>
+          <li>Javascript</li>
+          <li></li>
+        </ul`>
+    </section>
 
-
+    <section id="experience">
+      <h2 id="exp">Expériences</h2>
+        <ul class="listed">
+          <li><strong>2015-2017:</strong> Responsable de la communication</li>
+          <li class="more">Association les chats libres de Colomiers</li>
+        </ul`>
     </section>
 
 
 
     <section id="contact">
       <h2 id="ctc">Contact</h2>
-        <p>je vous invite à me contacter par mail ou encore à me suivre sur mon compte Instagram!</p>
-        <div class="logo">
-          <a href="https://www.instagram.com/zephira31/?hl=fr-ca" target="newpage"><img id="b4"src="images/instagram.png" alt="instagram"/></a>
-          <a href="mailto:sonia31rs@gmail.com"><img id="b5"src="images/email.png"alt="email"/></a>
-        </div>
+      <p id="parag">je vous invite à me contacter par mail ou encore à me suivre sur mon compte Instagram!</p>
+      <div>
+        <img id="qr"src="images/frame1.png"/>
+      </div>
+      <div class="logo">
+        <a href="https://www.instagram.com/zephira31/?hl=fr-ca" target="newpage"><img id="b4" src="images/instagram.png" alt="instagram" /></a>
+        <a href="mailto:sonia31rs@gmail.com"><img id="b5" src="images/email.png" alt="email" /></a>
+      </div>
+      <div id="mail">sonia31rs@gmail.com</div>
     </section>
 
 
   </div>
 
   <footer>Tous droits réservés</footer>
-<script src="js/lightbox-plus-jquery.min.js"></script>
+  <script src="js/lightbox-plus-jquery.min.js"></script>
 </body>
 
 </html>
