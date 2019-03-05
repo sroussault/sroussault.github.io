@@ -201,10 +201,15 @@ transition: all 0.5s ease-in 0s;
   background-image: url(images/light.png);
   width: 128px;
   height: 128px;
+  background-repeat: no-repeat;
 
 }
 
 #qr{
+  display: none;
+}
+
+#mail{
   display: none;
 }
 
@@ -280,7 +285,210 @@ footer{
   display: none;
 }
 
-@media screen and (max-width:760px) {
+
+/* +++++++++++++++++++++++++++++++++++++++++++  */
+@media screen and (min-Width:768px) and (max-width:1020px) {
+nav,footer,body,#content,header
+,#a-propos,#portfolio,#fonda,#contact,p,#fondb{
+width: 768px;}
+p{
+  margin-left: auto;
+  margin-right: auto;
+  width: 730px;
+}
+.vignettes:hover{
+  transform: scale(1);
+}
+#bounce{
+  display: none;
+}
+#pint1{
+  display: none;
+}
+#pint2{
+  display: none;
+}
+#b1:hover,
+#b2:hover,
+#b3:hover{
+  background-color: #00536F;
+  border-radius: 0%;
+}
+#fondb{
+  height: 700px;
+}
+#fondc{
+  margin-top: 150px;
+  width: 768px;
+}
+#contact{
+  margin-top: 180px;
+}
+#logo{
+  display: none;
+}
+footer{
+  margin-left: auto;
+  margin-right: auto;
+}
+}
+
+
+
+/* +++++++++++++++++++++++++++++++++++++++++++  */
+@media screen and (min-width:480px) and (max-width:760px) {
+nav,footer,body,#content,.headphone
+,#a-propos,.bulb,#portfolio,#fonda,#contact,p,#fondb{
+width: 480px;}
+#logo{
+  display: none;
+}
+header{
+  display: none;
+}
+.headphone{
+display: block;
+top: 0;
+margin: auto;
+height: 150px;
+background-color: #00536F;
+}
+h1{
+  font-family: 'Orbitron', sans-serif;
+  font-size:25px;
+  position: relative;
+  top: 50px;
+  color: white;
+  margin-left: 30px;
+  text-align: left;
+}
+#content{
+  height: 2100px;
+  top:0px;
+  position: relative;
+}
+#a-propos{
+  background-color: #ebebeb;
+}
+h2{
+  margin-top: -30px;
+  font-size: 30px;
+  text-shadow: none;
+  background-color: #3c3c3c;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: white;
+}
+h3{
+  margin-top: -10px;
+  color: black;
+  text-shadow: none;
+  font-size: 20px;
+}
+.description{
+  color: black;
+  font-size: 15px;
+  text-align: justify;
+  margin:0;
+  width: 420px;
+  padding: 20px;
+}
+.inspi{
+  margin-top:100px;
+}
+
+.bulb{
+  background-repeat: no-repeat;
+  display: block;
+  width: 280px;
+  height: 82px;
+  position: relative;
+  float: left;
+}
+#b1{
+  background-repeat: no-repeat;
+  display: block;
+  left: 20%;
+  width: 280px;
+  height: 82px;
+  position: absolute;
+}
+
+#b2{
+  background-repeat: no-repeat;
+  display: block;
+  width: 280px;
+  height: 82px;
+  top:530px;
+  left: 20%;
+  position: absolute;
+}
+
+#b3{
+  background-repeat: no-repeat;
+  display: block;
+  width: 280px;
+  height: 82px;
+  top:620px;
+  left: 20%;
+  position: absolute;
+}
+
+#b1 .bulb{background-image: url(images/bounce.png);}
+#b2 .bulb{background-image: url(images/pinterest.png);}
+#b3 .bulb{background-image: url(images/pinterestb.png);}
+
+#bounce{
+  display: none;
+}
+
+#pint1{
+  display: none;
+}
+
+#pint2{
+  display: none;
+}
+
+h4{
+  margin-top: -30px;
+  font-size: 30px;
+  text-shadow: none;
+  background-color: #3c3c3c;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: white;
+}
+#Portfolio{
+  top: 790px;
+}
+.vignettes:hover{
+  transform: scale(1);
+}
+#contact{
+  top: 1730px;
+}
+#fondc{
+  display: none;
+}
+#parag{
+  color: black;
+  font-size: 15px;
+  text-align: center;
+  margin:0;
+  width: 420px;
+  padding: 20px;
+}
+footer{
+  left: 25%;
+}
+}
+
+
+
+
+/* +++++++++++++++++++++++++++++++++++++++++++  */
+@media screen and (max-width:470px) {
 nav,footer,body,#content,.headphone
 ,#a-propos,.bulb,#portfolio,#fonda,#contact,p,#fondb{
 width: 320px;}
@@ -429,8 +637,14 @@ h4{
   width: 300px;
   padding: 10px;
 }
+footer{
+  left: 30%;
+}
 }
 
+
+
+/* +++++++++++++++++++++++++++++++++++++++++++  */
 @media print{
 nav,#fondb,#logo,header,h3,.description,.idée,#Portfolio,#fondb,#fondc,.logo{
   display: none;
