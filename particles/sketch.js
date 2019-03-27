@@ -3,6 +3,9 @@ var grav, px;
 var myHue=0;
 var inc=1;
 
+document.ontouchmove=function(event){
+  event.preventDefault();
+}
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
