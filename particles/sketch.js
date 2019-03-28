@@ -52,7 +52,7 @@ function Particle(){
     this.speed.add(grav);
     this.life--;
     this.perlin+=0.1;
-    this.ecolor= color(random(200,255)-(this.lifeMx-this.life)*255/this.lifeMx,0-(this.lifeMx-this.life)*0/this.lifeMx,random(0,255)-(this.lifeMx-this.life)*255/this.lifeMx,50);
+    this.ecolor= color(255-(this.lifeMx-this.life)*255/this.lifeMx,0-(this.lifeMx-this.life)*0/this.lifeMx,127-(this.lifeMx-this.life)*127/this.lifeMx,50);
 
     if(this.life<=0 || this.pos.y>windowHeight){
     	this.init();
@@ -61,13 +61,13 @@ function Particle(){
 
   this.init=function(){
   	this.pos= createVector(mouseX+noise(px,10)*30,mouseY+noise(px,30)*10);
-  	this.taille= randomGaussian(0.2,1);
+  	this.taille= randomGaussian(0.8,1);
     this.speed= createVector(random(-2,2),random(-2,2));
-  	this.ecolor= color(random(200,255), 0, random(0,255));
+  	this.ecolor= color(255, 0, 127);
   	this.life= random(60,100);
     this.lifeMx= this.life;
-    this.perlin= random(-20,20);
-    this.courbe= random(2,30);
+    this.perlin= random(-50,50);
+    this.courbe= random(2,60);
     px += 0.01;
   }
 
@@ -76,7 +76,7 @@ function Particle(){
 
 
 function init(){
-  for(var i=0;i<40;i++){
+  for(var i=0;i<80;i++){
   particles[i]=new Particle();
   }
 
@@ -88,7 +88,7 @@ function mousePressed() {
 
 function vcolor(){
   myHue+=inc;
-  if(myHue>=180||myHue<=0){
+  if(myHue>=400||myHue<=0){
     inc=-inc
   }
   var myCanvas = document.getElementsByTagName("canvas");
