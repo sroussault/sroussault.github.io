@@ -2,6 +2,7 @@ var particles = [];
 var grav, px;
 var myHue=0;
 var inc=1;
+var music;
 
 document.ontouchmove=function(event){
   event.preventDefault();
@@ -16,6 +17,11 @@ function setup() {
   angleMode(DEGREES);
   rectMode(CENTER);
   background(0);
+
+  music= createAudio('fantasma.mp3');
+  music.loop();
+
+
 
 
 }
