@@ -14,3 +14,12 @@ canvas {
   opacity:0.5;*/
   position: absolute;
 }
+
+.text{
+  font-size: 30px;
+  left: 40%;
+  color: #303030;
+  top: 10px;
+  position: absolute;
+  z-index: 50;
+}

@@ -3,6 +3,7 @@ var grav, px;
 var myHue=0;
 var inc=1;
 var music;
+var audioPlay = false;
 
 document.ontouchmove=function(event){
   event.preventDefault();
@@ -18,10 +19,10 @@ function setup() {
   rectMode(CENTER);
   background(0);
 
+/*
   music= createAudio('https://sroussault.github.io/particles/fantasma.mp3');
-  music.loop();
-
-
+  music.loop(true);
+*/
 
 
 }
@@ -88,6 +89,15 @@ function init(){
 
 }
 function mousePressed() {
+
+if(audioPlay==false){
+  music= createAudio('https://sroussault.github.io/particles/fantasma.mp3');
+  music.loop(true);
+  audioPlay = true;
+}
+
+
+
   background(0);
   init();
 }
