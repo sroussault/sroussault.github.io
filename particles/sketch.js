@@ -18,7 +18,7 @@ function setup() {
   rectMode(CENTER);
   background(0);
 
-  music= createAudio('fantasma.mp3');
+  music= createAudio('https://sroussault.github.io/particles/fantasma.mp3');
   music.loop();
 
 
